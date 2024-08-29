@@ -170,22 +170,22 @@ export default function GestorFinanzas() {
   };
 
   return (
-    <div className="container mx-auto p-4 bg-gray-100 min-h-screen">
+    <div className="p-4 bg-gray-100 dark:bg-gray-800">
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Formulario Agregar Transacción */}
-        <div className="bg-white rounded-lg shadow-md p-6">
-          <h2 className="text-xl font-semibold mb-4 text-gray-800">
+        <div className="bg-white rounded-lg shadow-md p-6 dark:bg-gray-700">
+          <h2 className="text-xl font-semibold mb-4 text-gray-800 dark:text-white">
             Agregar Transacción
           </h2>
           <form className="space-y-4">
             <div>
-              <label htmlFor="tipo" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="tipo" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
                 Tipo de transacción
               </label>
               <select
                 id="tipo"
-                className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+                className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md dark:bg-gray-800 dark:text-white"
                 value={nuevaTransaccion.tipo}
                 onChange={(e) =>
                   setNuevaTransaccion({
@@ -199,13 +199,13 @@ export default function GestorFinanzas() {
               </select>
             </div>
             <div>
-              <label htmlFor="monto" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="monto" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
                 Monto
               </label>
               <input
                 id="monto"
                 type="number"
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md dark:bg-gray-800 dark:text-white"
                 placeholder="Monto"
                 value={nuevaTransaccion.monto || ""}
                 onChange={(e) =>
@@ -217,13 +217,13 @@ export default function GestorFinanzas() {
               />
             </div>
             <div>
-              <label htmlFor="descripcion" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="descripcion" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
                 Descripción
               </label>
               <input
                 id="descripcion"
                 type="text"
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md dark:bg-gray-800 dark:text-white"
                 placeholder="Descripción"
                 value={nuevaTransaccion.descripcion}
                 onChange={(e) =>
@@ -235,13 +235,13 @@ export default function GestorFinanzas() {
               />
             </div>
             <div>
-              <label htmlFor="fecha" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="fecha" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
                 Fecha
               </label>
               <input
                 id="fecha"
                 type="date"
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md dark:bg-gray-800 dark:text-white"
                 value={nuevaTransaccion.fecha}
                 onChange={(e) =>
                   setNuevaTransaccion({
@@ -252,12 +252,12 @@ export default function GestorFinanzas() {
               />
             </div>
             <div>
-              <label htmlFor="categoria" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="categoria" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
                 Categoría
               </label>
               <select
                 id="categoria"
-                className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+                className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md dark:bg-gray-800 dark:text-white"
                 value={nuevaTransaccion.categoria}
                 onChange={(e) =>
                   setNuevaTransaccion({
