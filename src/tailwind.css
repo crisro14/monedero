@@ -1032,7 +1032,18 @@ code {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 640px) {
+@media (max-width: 640px ) {
+  .xs\:ml-auto {
+    margin-left: auto;
+  }
+
+  .xs\:w-full {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 10px ) {
   .sm\:ml-auto {
     margin-left: auto;
   }
